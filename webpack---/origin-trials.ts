@@ -1,0 +1,11 @@
+const LOAF_ORIGIN_TRIAL_TOKEN =
+	'A3vfOQQEyVDQcKoSteGWirfNNUngkH23kbgZLtHGKADrv7Zo79oKqY8GxM4DNR8yX2NvHwDhMow4etcNcwXg1AMAAACPeyJvcmlnaW4iOiJodHRwczovL3N0YXRpYy5wYXJhc3RvcmFnZS5jb206NDQzIiwiZmVhdHVyZSI6IkxvbmdBbmltYXRpb25GcmFtZVRpbWluZyIsImV4cGlyeSI6MTcxNjk0MDc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0='
+
+function addTrialToken(tokenContents: string) {
+	const tokenElement = document.createElement('meta')
+	tokenElement.httpEquiv = 'origin-trial'
+	tokenElement.content = tokenContents
+	document.head.appendChild(tokenElement)
+}
+
+addTrialToken(LOAF_ORIGIN_TRIAL_TOKEN)

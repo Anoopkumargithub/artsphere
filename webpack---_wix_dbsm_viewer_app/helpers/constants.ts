@@ -1,0 +1,26 @@
+export { USER_INPUT_FILTER_ROLES } from '@wix/wix-data-client-common'
+import {
+  USER_INPUT_FILTER_CHECKBOX_GROUP_ROLE,
+  USER_INPUT_FILTER_DROPDOWN_ROLE,
+  USER_INPUT_FILTER_RADIOGROUP_ROLE,
+  USER_INPUT_FILTER_SELECTION_TAGS_ROLE,
+} from '@wix/wix-data-client-common-standalone'
+
+export const RESET_ALL = 'RESET_ALL'
+
+export const USER_INPUT_FILTER_UNIQUE_OPTIONS_LIMIT = 1000
+
+export const USER_INPUT_FILTER_UNIQUE_DB_DRIVER_OPTIONS_LIMIT = 100
+
+export const LIST_TYPE_USER_INPUT_FILTER_ROLES = [
+  USER_INPUT_FILTER_DROPDOWN_ROLE,
+  USER_INPUT_FILTER_RADIOGROUP_ROLE,
+  USER_INPUT_FILTER_CHECKBOX_GROUP_ROLE,
+  USER_INPUT_FILTER_SELECTION_TAGS_ROLE,
+]
+
+export const DEPRECATED_METHODS_MAP = new Map([['new', 'add']])
+
+export { DATA_BINDING as APP_DEF_ID } from '@wix/app-definition-ids'
+
+export const APP_NAME = 'dbsm-viewer-app'
